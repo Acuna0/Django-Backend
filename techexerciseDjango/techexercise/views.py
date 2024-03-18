@@ -12,7 +12,7 @@ class TestView(APIView):
         }
         output = [{
             "email": output.email,
-            "name": output.name
+            "first_name": output.first_name
         } for output in TestObject.objects.all()]
         return Response(output)
     

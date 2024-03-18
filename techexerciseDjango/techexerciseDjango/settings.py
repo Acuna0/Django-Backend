@@ -56,9 +56,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'djoser',
     'techexercise',
-    'corsheaders',
-    'djoser',
-    'techexercise',
     # 'rest_framework.authtoken',
     # 'rest_framework_simplejwt',
 ]
