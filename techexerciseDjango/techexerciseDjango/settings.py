@@ -129,19 +129,6 @@ DATABASES = {
             'ssl': {'ca': '/Users/acuna/University/Intro to SWE/DigiCertGlobalRootCA.crt.pem'}
         }
     }
-    #     'default': {
-    #     'ENGINE': 'django.db.backends.mysql',
-    #     'NAME': 'testtwo',
-    #     # 'USER': 'racuna',
-    #     # 'PASSWORD': 'RalphA@4833098',
-    #     'USER': 'djangoBackend',
-    #     'PASSWORD': 'djangoApp509',
-    #     'HOST': 'techexercise-mysql-server.mysql.database.azure.com',
-    #     'PORT': '3306',
-    #     # 'OPTIONS': {
-    #     #     'ssl': {'ca': '/Users/acuna/University/Intro to SWE/DigiCertGlobalRootCA.crt.pem'}
-    #     # }
-    # }
 }
 
 
