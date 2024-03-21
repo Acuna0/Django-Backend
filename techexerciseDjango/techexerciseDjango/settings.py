@@ -26,9 +26,9 @@ SECRET_KEY = 'django-insecure-09go2xwtb!u3r*p@e0ak^kmzzprk=@&!t!j+4gx&flke2)52+o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["18.222.28.198", "ec2-18-222-28-198.us-east-2.compute.amazonaws.com", "http://ec2-18-222-28-198.us-east-2.compute.amazonaws.com", "'127.0.0.1:8000", "18.222.28.198:8000", "127.0.0.1"]
 
-AUTH_USER_MODEL = 'techexercise.User'
+AUTH_USER_MODEL = 'techexercise.Users'
 
 # SIMPLE_JWT = {
 #     'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
@@ -75,11 +75,13 @@ MIDDLEWARE = [
 
 # change this to live server
 CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:8080"
+    "http://127.0.0.1:8080",
+    "http://ec2-18-222-28-198.us-east-2.compute.amazonaws.com"
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://127.0.0.1:8080"
+    "http://127.0.0.1:8080",
+    "http://ec2-18-222-28-198.us-east-2.compute.amazonaws.com"
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
@@ -118,7 +120,7 @@ WSGI_APPLICATION = 'techexerciseDjango.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'testtwo',
+        'NAME': 'testthree',
         'USER': 'racuna',
         'PASSWORD': 'RalphA@4833098',
         'HOST': 'techexercise-mysql-server.mysql.database.azure.com',
@@ -127,6 +129,19 @@ DATABASES = {
             'ssl': {'ca': '/Users/acuna/University/Intro to SWE/DigiCertGlobalRootCA.crt.pem'}
         }
     }
+    #     'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'testtwo',
+    #     # 'USER': 'racuna',
+    #     # 'PASSWORD': 'RalphA@4833098',
+    #     'USER': 'djangoBackend',
+    #     'PASSWORD': 'djangoApp509',
+    #     'HOST': 'techexercise-mysql-server.mysql.database.azure.com',
+    #     'PORT': '3306',
+    #     # 'OPTIONS': {
+    #     #     'ssl': {'ca': '/Users/acuna/University/Intro to SWE/DigiCertGlobalRootCA.crt.pem'}
+    #     # }
+    # }
 }
 
 
